@@ -14,7 +14,7 @@ public class ItcSolutionTask {
 
     public List<WebElement> getSomeElements(String path) {
         if (path == null){
-            throw IllegalArgumentException("getElements: illegal path (NULL)");
+            throw IllegalArgumentException("getElements: illegal path (NULL)"); // после throw должно быть new
             path = "//*[@id='Hello']"; // 1 зачем после выброса исключения задавать путь?
                                     // 2 что значит этот путь?
         }
